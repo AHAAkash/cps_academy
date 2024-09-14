@@ -1,0 +1,12 @@
+#include<iostream>
+#include<iomanip>
+
+using namespace std;
+int main()
+{
+    int a;
+    cin>>a ;
+    int lastTwoWord = a%100;
+    //cout<< lastTwoWord;
+    cout<< "K"<< setw(2)<< setfill('0') <<lastTwoWord;
+}
