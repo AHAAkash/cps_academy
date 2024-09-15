@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    long long A, B;
+    cin >> A >> B;
+    
+    long long Atac = (A + B - 1) / B;
+    cout << Atac << endl;
+
+    return 0;
+}
