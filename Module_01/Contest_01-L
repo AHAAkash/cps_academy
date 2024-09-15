@@ -1,0 +1,11 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int X,Y;
+    cin>> X >> Y;
+    int r = 6*X+Y;
+
+    cout<< r <<endl;
+}
