@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    char S1, S2, T1, T2;
+    cin >> S1 >> S2;
+    cin >> T1 >> T2;
+    
+    int distS = abs(S1 - S2);
+    if (distS > 2) {
+        distS = 5 - distS;
+    }
+    
+    int distT = abs(T1 - T2);
+    if (distT > 2) {
+        distT = 5 - distT;
+    }
+    
+    if (distS == distT) {
+        cout << "Yes" << endl;
+    } else {
+        cout << "No" << endl;
+    }
+    
+    return 0;
+}
