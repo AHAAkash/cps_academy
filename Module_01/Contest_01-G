@@ -1,0 +1,53 @@
+#include<iostream>
+using namespace std;
+int main(){
+    int n;
+    cin>>n;
+    int a,b,c;
+
+    c=n%10;
+    n=n/10;
+    b=n%10;
+    n=n/10;
+    a=n%10;
+
+    int abc=0;
+    abc=abc+a;
+    abc=abc*10;
+    abc=abc+b;
+    abc=abc*10;
+    abc=abc+c;
+
+    int bca=0;
+    bca=bca+b;
+    bca=bca*10;
+    bca=bca+c;
+    bca=bca*10;
+    bca=bca+a;
+
+    int cab=0;
+    cab=cab+c;
+    cab=cab*10;
+    cab=cab+a;
+    cab=cab*10;
+    cab=cab+b;
+
+    cout<< (abc+bca+cab);
+    return 0;
+}
+/*#include <iostream>
+using namespace std;
+
+int main() {
+    int abc;
+    cin >> abc;
+    int a = abc / 100;
+    int b = (abc / 10) % 10;
+    int c = abc % 10;
+
+    int result = abc + (b * 100 + c * 10 + a) + (c * 100 + a * 10 + b);
+
+    cout << result << endl;
+
+    return 0;
+} */
