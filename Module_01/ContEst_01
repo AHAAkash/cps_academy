@@ -1,0 +1,12 @@
+#include<iostream>
+#include<iomanip>
+#include<cmath>
+using namespace std;
+int main()
+{
+    double f;
+    cin>>f;
+    double area = M_PI*f*f;
+    double circum = 2*M_PI*f;
+    cout<<fixed <<setprecision(6)<< area <<" "<<circum;
+}
