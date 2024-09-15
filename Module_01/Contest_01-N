@@ -1,0 +1,11 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int N;
+    cin >> N;
+    int tCour = 2*N;
+    cout << tCour << endl;
+
+    return 0;
+}
