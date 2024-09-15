@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int N, M, X, Y;
+    cin >> N >> M;
+    cin >> X >> Y;
+    
+    int t_Treat = (N * X) + (M * Y);
+    cout << t_Treat << endl;
+
+    return 0;
+}
