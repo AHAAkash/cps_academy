@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int A, B;
+    cin >> A >> B;
+    
+    int r = A+B+(A*B);
+    if(r==111){
+       cout<<"Yes"<<endl;
+    }else{
+       cout<<"No"<<endl;
+    }
+    return 0;
+}
