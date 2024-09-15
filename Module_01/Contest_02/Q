@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int A, B, X, Y;
+    cin >> A >> B >> X >> Y;
+    
+    int m = 2 * A + B;
+    int r = 2 * X + Y;
+    
+    if (m > r) {
+        cout << "Messi" << endl;
+    } else if (r > m) {
+        cout << "Ronaldo" << endl;
+    } else {
+        cout << "Equal" << endl;
+    }
+    
+    return 0;
+}
