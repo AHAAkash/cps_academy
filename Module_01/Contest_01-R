@@ -1,0 +1,12 @@
+#include<iostream>
+#include<cmath>
+using namespace std;
+
+int main()
+{
+    int A,B;
+    cin>> A >> B;
+    int r =(pow(A,B)+pow(B,A));
+
+    cout<< r <<endl;
+}
