@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a,b,c;
+    cin>>a>>b>>c;
+    
+    int max = a;
+    if(max>=b && c<=max){
+       cout<<"Yes"<<endl;
+    }else {
+       cout<<"No"<<endl;
+    }
+
+    return 0;
+}
+    
