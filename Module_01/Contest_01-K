@@ -1,0 +1,11 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int N;
+    cin>> N;
+    int r = (2000*N)/500;
+
+    cout<< r <<endl;
+}
