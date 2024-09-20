@@ -1,0 +1,27 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int tc;
+    cin >> tc;
+    while(tc--){
+      string arr[6];
+      for(int i=0;i<6;i++){
+         cin >> arr[i];
+      }
+      bool flag = false;
+      for(int i=0;i<=3;i++){
+         if(arr[i]=="W" && arr[i+1] =="W" && arr[i+2] =="W"){
+            flag = true;
+            break;
+         }
+      }
+      if(flag){
+        cout << "YES" << endl;
+      }else{
+        cout << "NO" << endl;
+      }
+    }
+    
+    return 0;
+}
