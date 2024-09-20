@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int T;
+    cin >> T;  
+
+    while (T--) {
+        int S;
+        cin >> S;  
+        cout << 24000 * S << endl;  
+    }
+
+    return 0;
+}
