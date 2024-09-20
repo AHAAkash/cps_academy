@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int tc;
+    cin >> tc;  
+
+    while (tc--) {
+        int X, Y, Z;
+        cin >> X >> Y >> Z;  
+
+        int req_time = X * Y;        
+        int avl_time = Z * 1440;     
+        if (req_time <= avl_time) {
+            cout << "YES" << endl;
+        } else {
+            cout << "NO" << endl;
+        }
+    }
+
+    return 0;
+}
