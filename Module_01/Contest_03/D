@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+ 
+int main() {
+    int t;
+    cin >> t;
+    
+    while (t--) {
+        int k;
+        cin >> k;
+        
+        int count = 0;  
+        int cur = 1;  
+        
+        while (true) {
+            if (cur % 3 != 0 && cur % 10 != 3) {
+                count++;
+                if (count == k) {
+                    cout << cur << endl;
+                    break;
+                }
+            }
+            cur++;  
+        }
+    }
+    
+    return 0;
+}
