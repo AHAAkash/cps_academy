@@ -1,0 +1,23 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int tc;
+    cin >> tc;
+    while(tc--){
+      int x,n,avl;
+      cin >> x >> n;
+      if(n%100==0){
+         avl=n/100;
+      }else{
+         avl=n/100 + 1;
+      }
+      int temp = avl;
+      if (avl>= x){
+        cout << avl-x << endl;
+      }else{
+        cout << "0" << endl;
+      }
+    }
+    return 0;
+}
