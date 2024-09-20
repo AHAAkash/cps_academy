@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int tc;
+    cin >> tc;  
+
+    while (tc--) {
+        int N, K;
+        cin >> N >> K;  
+        int fair = N / (K + 1);
+        int total= K * fair;
+        int net_pay= N - total;
+
+        cout << net_pay << endl;
+    }
+
+    return 0;
+}
