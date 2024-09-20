@@ -1,0 +1,30 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int tc;
+    cin >> tc;
+    while(tc--){
+      int n;
+      cin >> n;
+      int round[5]; 
+      int cnt = 0;
+      int multiplier = 1;
+      while(n>0){
+         int digit = n%10;
+         if(digit != 0){
+            round[cnt]=digit*multiplier;
+            cnt++;
+         }
+         n/=10;
+         multiplier *= 10;
+      }
+      cout << cnt << endl;
+      for(int i=cnt-1;i>=0;i--){
+         cout << round[i] << " ";
+      }
+      cout << endl;
+      
+    }
+    return 0;
+}
