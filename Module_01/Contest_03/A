@@ -1,0 +1,16 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+    int tc;
+    cin>>tc;
+    while(tc--){
+        int x;
+        cin>>x;
+        if(x>=25 && x<=50){
+            cout<< (x-10) <<endl;
+        }else{
+            return 0;
+        }
+    }
+}
