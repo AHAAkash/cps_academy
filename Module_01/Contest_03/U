@@ -1,0 +1,14 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int tc;
+    cin >> tc;
+    while(tc--){
+      int x,n;
+      cin >> x >> n;
+      int result = min(20,x/n);
+      cout << result << endl;
+    }
+    return 0;
+}
