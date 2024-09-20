@@ -1,0 +1,17 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int tc;
+    cin >> tc;
+    while(tc--){
+      int x,n;
+      cin >> n >> x;
+      if(x<=n) cout << "0" << endl;
+      else{
+       int result = 2*(x-n);
+       cout << result << endl;
+      }
+    }
+    return 0;
+}
