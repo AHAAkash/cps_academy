@@ -1,0 +1,21 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt();  
+        int[] arr = new int[7 * n];  
+
+        for (int i = 0; i < 7 * n; i++) {
+            arr[i] = sc.nextInt();
+        }
+        for (int i = 0; i < n; i++) {
+            int sum = 0;
+            for (int j = 0; j < 7; j++) {
+                sum += arr[i * 7 + j];
+            }
+            System.out.print(sum + " ");
+        }
+    }
+}
