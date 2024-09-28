@@ -1,0 +1,46 @@
+#include <bits/stdc++.h>
+using namespace std ;
+
+int main() {
+    int n , d ;
+    cin >> n ;
+    int a[10]={0,1,2,3,4,5,6,7,8,9};
+    int b[10]={0,11,22,33,44,55,66,77,88,99};
+    
+    int sum =0 ;
+    
+    for(int i=1 ; i<=n; i++){
+        cin>>d ;
+        for(int j=1 ; j<= 9 ; j++){
+            if(i==a[j]){
+                if(d>= b[j]){
+                    sum+=2;
+                }
+               else if(d >= a[j]){
+                   sum+=1;
+               }
+               else{
+                   
+               }
+               break;
+            }
+            if(i==b[j]){
+                if(d>= b[j]){
+                    sum+=2 ;
+                }
+                else if(d >= a[j]){
+                    sum+=1 ;
+                }
+                else{
+                    
+                }
+                break;
+            }
+        }
+        
+    }
+    cout<<sum<<endl;
+  
+
+    return 0;
+} 
