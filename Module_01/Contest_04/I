@@ -1,0 +1,29 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int tc; 
+    cin >> tc;
+    const int MAX = 200000;
+    int sq[MAX]; 
+
+    while (tc--) {
+        int n; 
+        cin >> n;
+
+        long long totalSq = 0; 
+        for (int i = 0; i < n; ++i) {
+            cin >> sq[i]; 
+            totalSq += sq[i];
+        }
+
+        long long r = sqrt(totalSq); 
+        if (r * r == totalSq) { 
+            cout << "YES\n";
+        } else {
+            cout << "NO\n";
+        }
+    }
+
+    return 0;
+}
